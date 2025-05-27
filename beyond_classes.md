@@ -1,4 +1,4 @@
-# Chapter Review: Beyond Classes
+# Beyond Classes
 
 This document provides summaries, conceptual questions, scenario-based questions, and coding problems for the chapter "Beyond Classes," covering Interfaces, Enums, Records, Nested Classes, and Polymorphism.
 
