@@ -170,7 +170,7 @@ This section introduces method references as a shorthand syntax for certain lamb
 
 1.  If you have a `List<String> names` and you want to print each name using `forEach`, could you use a method reference for `System.out.println`? If so, what would it look like?
 2.  Consider a functional interface `Predicate<T>` with a method `boolean test(T t)`. If you have a class `Person` with an instance method `boolean isAdult()`, and an instance `Person person = new Person();`:
-      * How would you write a method reference assigned to `Predicate<Person>` that uses `person.isAdult()`?
+      * How would you write a method reference assigned to `Predicate<Person>` that uses `person.isAdult()`? (Think carefully if this type fits directly).
       * How would you write one that refers to the `isAdult` method to be called on *any* `Person` object passed to the predicate?
 3.  Suppose you have a functional interface `Supplier<T>` with a method `T get()`. If you want to create new `StringBuilder` objects using this, what would the constructor reference look like?
 4.  If a functional interface `MyFunction` has the method `int convert(String s)`, and the `Integer` class has a static method `parseInt(String s)`, what would be the method reference to implement `MyFunction` using `Integer.parseInt`?
@@ -278,9 +278,9 @@ This section details how variables are handled in lambda expressions, covering l
 1.  **Lambda Parameter Lists:**
       * **Type Inference:** Types often inferred from context (functional interface).
       * **Syntax Options:**
-        1.  No explicit types: `x -> true` (parentheses optional for single param).
-        2.  Using `var`: `(var x) -> true` (parentheses required).
-        3.  Explicit types: `(String x) -> true` (parentheses required).
+        1.  No explicit types: `x -> true` (parentheses optional for single param like this). e.g., `(x,y) -> ...`
+        2.  Using `var`: `(var x) -> true` (parentheses required). e.g., `(var x, var y) -> ...`
+        3.  Explicit types: `(String x) -> true` (parentheses required). e.g., `(String x, int y) -> ...`
       * **Consistency Rule:** All parameters in a list must use the same format (all `var`, all explicit types, or all no types).
       * **Modifiers:** Can have `final` or annotations.
 2.  **Local Variables Declared *Inside* a Lambda Body:**
@@ -297,7 +297,7 @@ This section details how variables are handled in lambda expressions, covering l
 1.  What are the three different formats you can use for specifying parameters in a lambda expression? What is the consistency rule regarding these formats in a single lambda?
 2.  Can you declare new local variables inside the body of a lambda expression? If so, what is an important rule regarding the names of these variables in relation to lambda parameters or variables from the enclosing scope?
 3.  What does it mean for a local variable or a method parameter to be "effectively final"?
-4.  Which types of variables from an enclosing scope can a lambda body always access without restriction (assuming standard access modifiers allow it)?
+4.  Which types of variables from an enclosing scope can a lambda body always access without restriction (assuming standard access modifiers allow it from the context where the lambda is defined)?
 5.  What is the restriction on a lambda body accessing local variables or method parameters from its enclosing scope? Why does this restriction exist?
 6.  If a local variable is reassigned *after* the point where a lambda expression that references it is defined, where does the compiler typically report an error if the variable is not effectively final?
 
