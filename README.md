@@ -1,16 +1,32 @@
-# Java Concepts for Interview
+# Java Notes
 
-This repository contains a comprehensive collection of Java concepts, examples, and explanations to help prepare for Java-related interviews.
+This repository contains comprehensive notes on various Java programming topics. Each folder represents a chapter covering different aspects of Java programming.
 
 ## Chapters
 
-* [Beyond Classes](./beyond_classes.md) - Exploring advanced Java concepts beyond the basics of classes and objects, including Interfaces, Enums, Records, Nested Classes, and Polymorphism.
-* [Lambdas and Functional Interfaces](./lambdas_and_functional_interfaces/main_doc.md) - Understanding Java's functional programming features including lambda expressions and functional interfaces.
+### [Beyond Classes](beyond_classes/main_doc.md)
 
-## Book Progress
+This chapter covers advanced Java concepts beyond basic classes, including:
+- Implementing Interfaces
+- Working with Enums
+- Encapsulating Data with Records
+- Creating Nested Classes
+- Understanding Polymorphism
 
-This repository is a work-in-progress, with new chapters and content being added regularly. Stay tuned for updates!
+### [Lambdas and Functional Interfaces](lambdas_and_functional_interfaces/main_doc.md)
 
-## Contributing
+This chapter focuses on functional programming in Java, covering:
+- Lambda Expressions
+- Functional Interfaces
+- Lambda Syntax and Usage
+- Type Inference with Lambdas
 
-If you'd like to contribute to this project, please fork the repository and submit a pull request. All contributions are welcome!
+## About This Repository
+
+These notes are organized by topic, with each folder containing a main_doc.md file that includes:
+- Comprehensive summaries
+- Conceptual questions
+- Scenario-based questions
+- Coding problems
+
+Feel free to navigate to each chapter by clicking on the links above.
