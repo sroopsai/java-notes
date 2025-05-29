@@ -4,7 +4,7 @@ This document contains the summary, conceptual questions, scenario-based questio
 
 -----
 
-## Summary  L️⃣
+## Summary
 
 This section focuses on the `java.util.List` interface, its characteristics, common implementations (`ArrayList` and `LinkedList`), factory methods for creating lists, and specific `List` methods.
 
