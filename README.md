@@ -4,7 +4,7 @@ This repository contains comprehensive notes on various Java programming topics.
 
 ## Chapters
 
-### [Beyond Classes](beyond_classes/main_doc.md)
+### [Beyond Classes](Beyond%20Classes/beyond_classes.md)
 
 This chapter covers advanced Java concepts beyond basic classes, including:
 - Implementing Interfaces
@@ -13,7 +13,6 @@ This chapter covers advanced Java concepts beyond basic classes, including:
 - Creating Nested Classes
 - Understanding Polymorphism
 
-### [Lambdas and Functional Interfaces](lambdas_and_functional_interfaces/main_doc.md)
 
 This chapter focuses on functional programming in Java, covering:
 - Lambda Expressions
